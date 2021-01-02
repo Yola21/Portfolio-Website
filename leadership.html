@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="icon" href="./image/icon.jpeg" type="image/icon">
+    <title>Yash Khorja</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .summary{
+            margin: 5rem auto;
+            width: 50%;
+        }
+
+        .card-text{
+            font-size: 20px;
+        }
+
+        .card-title{
+            text-align: center;
+            font-weight: bold;
+            color: rgb(44, 2, 73);
+        }
+
+        img{
+            width: 112px; 
+            margin-bottom: 25px;
+        }
+
+        /* Timeline */
+
+        .main-timeline9{
+            position:relative
+        }
+
+        .main-timeline9:after, .main-timeline9:before{
+            content:"";
+            display:block;
+            width:100%;
+            clear:both
+        }
+
+        .main-timeline9:before{
+            content:"";
+            width:3px;
+            height:100%;
+            background:#302124;
+            position:absolute;
+            top:0;
+            left:50%
+        }
+
+        .main-timeline9 .timeline{
+            width:50%;
+            float:left;
+            position:relative;
+            z-index:1
+        }
+
+        .main-timeline9 .timeline:after, .main-timeline9 .timeline:before{
+            content:"";
+            display:block;
+            width:100%;
+            clear:both
+        }
+
+        .main-timeline9 .timeline:first-child:before, .main-timeline9 .timeline:last-child:before{
+            content:"";
+            width:25px;
+            height:25px;
+            border-radius:50%;
+            background:#fff;
+            border:4px solid indigo;
+            position:absolute;
+            top:0;
+            right:-14px;
+            z-index:1
+        }
+
+        .main-timeline9 .timeline:last-child:before{
+            top:auto;
+            bottom:0
+        }
+
+        .main-timeline9 .timeline:last-child:nth-child(even):before{
+            right:auto;
+            left:-12px;
+            bottom:-2px
+        }
+
+        .main-timeline9 .timeline-content{
+            text-align:center;
+            margin-top:8px;
+            position:relative;
+            transition:all .3s ease 0s
+        }
+
+        .main-timeline9 .timeline-content:before{
+            content:"";
+            width:100%;
+            height:5px;
+            background:indigo;
+            position:absolute;
+            top:88px;
+            left:0;
+            z-index:-1
+        }
+
+        .main-timeline9 .circle{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            background:#fff;
+            border:8px solid indigo;
+            float:left;
+            margin-right:25px;
+            position:relative
+        }
+
+        .main-timeline9 .circle span:after, .main-timeline9 .circle span:before, .main-timeline9 .circle:before{
+            content:"";
+            margin:auto;
+            position:absolute;
+            right:-33px;
+            bottom:0;
+            z-index:-1
+        }
+
+        .main-timeline9 .circle:before{
+            width:26px;
+            height:30px;
+            background:indigo;
+            top:0;
+            box-shadow:inset 7px 0 9px -7px #000
+        }
+         
+        .main-timeline9 .circle span{
+            display:block;
+            width:100%;
+            height:100%;
+            border-radius:50%;
+            line-height:160px;
+            border:3px solid #ccdbfd;
+            font-size:80px;
+            color: #fff
+        }
+
+        .main-timeline9 .circle span:after, .main-timeline9 .circle span:before{
+            width:28px;
+            height:50px;
+            background:#ccdbfd; 
+            border-radius:0 0 0 21px;
+            top:-54px
+        }
+
+        .main-timeline9 .circle span:after{
+            border-radius:21px 0 0;
+            top:0;
+            bottom:-56px
+        }
+
+        .main-timeline9 .content{
+            display:table;
+            padding-right:40px;
+            position:relative
+        }
+
+        .main-timeline9 .year{
+            display:block;
+            padding:10px;
+            margin:10px 0 50px;
+            background:darkblue;
+            border-radius:7px;
+            font-size:25px;
+            color:#fff
+        }
+        
+        .main-timeline9 .title{
+            font-size:25px;
+            font-weight:700;
+            color:indigo;
+            margin-top:0
+        }
+
+        .main-timeline9 .subtitle{
+            font-size:18px;
+            font-weight:700;
+            color:darkblue;
+            margin-top:0
+        }
+
+        .main-timeline9 .icon span:after, .main-timeline9 .icon span:before, .main-timeline9 .icon:before{
+            content:"";
+            height:25px;
+            margin:auto;
+            position:absolute;
+            bottom:0;
+            z-index:-1;
+            left:-15px
+        }
+
+        .main-timeline9 .description{
+            font-size:16px;
+            color:indigo;
+            text-align:justify
+        }
+
+        .main-timeline9 .icon{
+            width:25px;
+            height:25px;
+            border-radius:50%;
+            background:#fff;
+            border:4px solid indigo;
+            position:absolute;
+            top:78px;
+            right:-14px
+        }
+
+        .main-timeline9 .icon:before{
+            width:15px;
+            background:indigo;
+            top:-1px
+        }
+
+        .main-timeline9 .icon span:after, .main-timeline9 .icon span:before{
+            width:21px;
+            background:#ccdbfd;
+            border-radius:0 0 21px;
+            top:-30px
+        }
+
+        .main-timeline9 .icon span:after{
+            border-radius:0 21px 0 0;
+            top:0;
+            left:-15px;
+            bottom:-30px
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .circle, .main-timeline9 .timeline:nth-child(2n) .timeline-content{
+            float:right
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .circle{
+            margin:0 0 0 25px
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .circle:before{
+            right:auto;
+            left:-33px;
+            box-shadow:-7px 0 9px -7px #000 inset
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .circle span:after, .main-timeline9 .timeline:nth-child(2n) .circle span:before{
+            right:auto;
+            left:-33px;
+            border-radius:0 0 21px
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .circle span:after{
+            border-radius:0 21px 0 0
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .content{
+            padding:0 0 0 40px;
+            margin-left:2px
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .icon{
+            right:auto;
+            left:-14px
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .icon span:after, .main-timeline9 .timeline:nth-child(2n) .icon span:before, .main-timeline9 .timeline:nth-child(2n) .icon:before{
+            left:auto;
+            right:-15px
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .icon span:before{
+            border-radius:0 0 0 21px
+        }
+
+        .main-timeline9 .timeline:nth-child(2n) .icon span:after{
+            border-radius:21px 0 0
+        }
+
+        .main-timeline9 .timeline:nth-child(2){
+            margin-top:180px
+        }
+
+        .main-timeline9 .timeline:nth-child(odd){
+            margin:-175px 0 0
+        }
+
+        .main-timeline9 .timeline:nth-child(even){
+            margin-bottom:80px
+        }
+
+        .main-timeline9 .timeline:first-child, .main-timeline9 .timeline:last-child:nth-child(even){
+            margin:0
+        }
+
+        @media only screen and (max-width:990px){
+            .main-timeline9:before{
+                left:100%
+            }
+
+            .main-timeline9 .timeline{
+                width:100%;
+                float:none;
+                margin-bottom:20px !important
+            }
+
+            .main-timeline9 .timeline:first-child:before, .main-timeline9 .timeline:last-child:before{
+                left:auto !important;
+                right:-13px !important
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .circle{
+                float:left;
+                margin:0 25px 0 0
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .circle:before{
+                right:-33px;
+                left:auto;
+                box-shadow:7px 0 9px -7px #ccdbfd inset
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .circle span:after, .main-timeline9 .timeline:nth-child(2n) .circle span:before{
+                right:-33px;
+                left:auto;
+                border-radius:0 0 0 21px
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .circle span:after{
+                border-radius:21px 0 0
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .content{
+                padding:0 40px 0 0; 
+                margin-left:0
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .icon{
+                right:-14px;
+                left:auto
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .icon span:after, .main-timeline9 .timeline:nth-child(2n) .icon span:before, .main-timeline9 .timeline:nth-child(2n) .icon:before{
+                left:-15px;
+                right:auto
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .icon span:before{
+                border-radius:0 0 21px
+            }
+
+            .main-timeline9 .timeline:nth-child(2n) .icon span:after{
+                border-radius:0 21px 0 0
+            }
+
+            .main-timeline9 .timeline:nth-child(2), .main-timeline9 .timeline:nth-child(even), .main-timeline9 .timeline:nth-child(odd){
+                margin:0
+            }
+
+        }
+
+        @media only screen and (max-width:480px){
+            .main-timeline9:before{
+                left:0
+            }
+            .main-timeline9 .timeline:first-child:before, .main-timeline9 .timeline:last-child:before{
+                left:-12px !important;
+                right:auto !important
+            }
+
+            .main-timeline9 .circle, .main-timeline9 .timeline:nth-child(2n) .circle{
+                width:130px;
+                height:130px;
+                float:none;
+                margin:0 auto
+            }
+
+            .main-timeline9 .timeline-content:before{
+                width:99.5%;
+                top:68px;
+                left:.5%
+            }
+
+            .main-timeline9 .circle span{
+                line-height:115px;
+                font-size:60px
+            }
+
+            .main-timeline9 .circle span:after, .main-timeline9 .circle span:before, .main-timeline9 .circle:before, .main-timeline9 .icon{
+                display:none
+            }
+
+            .main-timeline9 .content, .main-timeline9 .timeline:nth-child(2n) .content{
+                padding:0 10px
+            }
+
+            .main-timeline9 .year{
+                margin-bottom:15px
+            }
+
+            .main-timeline9 .description{
+                text-align:center
+            }
+
+            .main-timeline9 .circle img{
+                width: 60px;
+            }
+        }   
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-shape">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <ul class="navbarli">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li class="current"><a href="leadership.html">Leadership</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <div class="content-leadership">
+        <div class="summary">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">LEADERSHIP & INVOLVEMENTS</h3>
+                    <p class="card-text">I love public speaking back from my school days. Actually I learnt and got interested in from their only. My love towards public speaking has pulled me towards volunteering in different organizations and as different roles. Not only it gave me a chance to polish my public speaking skills but also to be a team player and atlast a Leader.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline9">
+                        <div class="timeline">
+                            <div class="timeline-content" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+                                <div class="circle"><span><img src="/image/csilogo.jpg" alt=""></span></div>
+                                <div class="content">
+                                    <span class="year">Sept 2020- Present</span>
+                                    <h4 class="title">Mentor</h4>
+                                    <h5 class="subtitle">Computer Society of India (CSI)</h5>
+                                    <br>
+                                    <p class="description">
+                                        🚀 Responsible for every organized events as well as for guiding and training mentees in orgainizing events on my campus under GCET CSI SB.
+                                    <div class="icon"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="circle"><span><img src="/image/ce.png" alt=""></span></div>
+                                <div class="content">
+                                    <span class="year">Feb 2020 - Aug 2020</span>
+                                    <h4 class="title">Campus Ambassador</h4>
+                                    <h5 class="subtitle">Coding Elements</h5>
+                                    <br>
+                                    <p class="description">
+                                        🚀 Nurtured programming culture on campus by spreading awareness
+                                        about various programs and courses offered for competitive
+                                        programming.
+                                    </p>
+                                    <div class="icon"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="circle"><span><img src="/image/csilogo.jpg" alt=""></span></div>
+                                <div class="content">
+                                    <span class="year">July 2019 - June 2020</span>
+                                    <h4 class="title">Public Relations Representative</h4>
+                                    <h5 class="subtitle">Computer Society of India (CSI)</h5>
+                                    <br>
+                                    <p class="description">
+                                        🚀 Had the responsibility of Publicity of every organized events and also
+                                        Coordinated many events throughout the tenure on campus under GCET CSI SB.               
+                                    </p>
+                                    <div class="icon"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="circle"><span><img src="/image/iMAZE-2019.jpg" alt=""></span></div>
+                                <div class="content">
+                                    <span class="year">Feb 2019 - Apr 2019</span>
+                                    <h4 class="title">Publicity Volunteer</h4>
+                                    <h5 class="subtitle">Imaze'19, College Fest</h5>
+                                    <br>
+                                    <p class="description">
+                                        🚀 Volunteered in Publicity team of my College Fest, <em>Imaze'19</em> and contributed in making 4500+ total entries in total.            
+                                    </p>
+                                    <div class="icon"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <p style="text-align: center; font-size: 25px; margin-top: 25px;">Developed with ❤ and a Cup of 🍵 by <a href="https://github.com/Yola21" style="text-decoration: none; color: inherit;"><strong>Yola Yash!</strong></a></p>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

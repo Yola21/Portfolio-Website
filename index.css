@@ -1,0 +1,136 @@
+body{
+    background: #ccdbfd fixed;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.navbar{
+    /* background: rgb(63, 75, 238); */
+    justify-content: center;
+}
+
+.navbar-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.navbar-shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    z-index: -1;
+}
+
+.navbar-shape .shape-fill {
+    fill: #A1C3F0;
+}
+
+ul{
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.current{
+    font-weight: bold;
+}
+
+.navbarli > li{
+    box-shadow: 3px 3px 10px #7992b4, -3px -3px 10px #c9f4ff;
+    margin: 5px 15px;
+    border-radius: 50px;
+}
+
+.navbarli > .current{
+    box-shadow: inset 3px 3px 10px #7992b4, inset -3px -3px 10px #c9f4ff;
+}
+
+li a{
+    text-decoration: none;
+    color:  indigo;
+    font-size: 22px;
+}
+
+li a:hover{
+    text-decoration: none;
+    color: indigo;
+}
+
+.anime::after {
+    content: '😎';
+    animation-name: stylish;
+    animation-duration: 1s;
+}
+
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wave::after {
+    content: '✋';
+    --emoji: '👋';
+    animation-name: hi;
+    animation-duration: 1s;
+}
+
+@keyframes hi {
+    50% {
+        content: '👋';
+    }
+}
+
+.card{
+    background-color: #a1c3f0;
+    color: rgb(21, 49, 90);
+    border-left: 8px solid darkblue;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;        
+    -webkit-animation: slide-from-left 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-from-left 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-from-left{
+    0% {
+        -webkit-transform: translateX(-5px) rotateY(90deg);
+        transform: translateX(-5px) rotateY(90deg);
+        -webkit-transform-origin: left center;
+        transform-origin: left center;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotateY(0deg);
+        transform: translateX(0) rotateY(0deg);
+        -webkit-transform-origin: left center;
+        transform-origin: left center;
+    }
+}
+
+@keyframes slide-from-left{
+    0% {
+        -webkit-transform: translateX(-5px) rotateY(90deg);
+        transform: translateX(-5px) rotateY(90deg);
+        -webkit-transform-origin: left center;
+        transform-origin: left center;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotateY(0deg);
+        transform: translateX(0) rotateY(0deg);
+        -webkit-transform-origin: left center;
+        transform-origin: left center;
+    }
+}

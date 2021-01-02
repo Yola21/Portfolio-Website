@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="icon" href="./image/icon.jpeg" type="image/icon">
+    <title>Yash Khorja</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .summary{
+            margin: 5rem auto;
+            width: 50%;
+        }
+        
+        .cards{
+            background-color: rgb(123, 145, 241);
+            color: rgb(21, 49, 90);
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        .summary .card{
+            background-color: #a1c3f0;
+            color: rgb(21, 49, 90);
+            border-left: 8px solid darkblue;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 0 0;
+
+            -webkit-animation: slide-from-left 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: slide-from-left 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        @-webkit-keyframes slide-from-left{
+            0% {
+                -webkit-transform: translateX(-5px) rotateY(90deg);
+                transform: translateX(-5px) rotateY(90deg);
+                -webkit-transform-origin: left center;
+                transform-origin: left center;
+            }
+            100% {
+                -webkit-transform: translateX(0) rotateY(0deg);
+                transform: translateX(0) rotateY(0deg);
+                -webkit-transform-origin: left center;
+                transform-origin: left center;
+            }
+        }
+
+        @keyframes slide-from-left{
+            0% {
+                -webkit-transform: translateX(-5px) rotateY(90deg);
+                transform: translateX(-5px) rotateY(90deg);
+                -webkit-transform-origin: left center;
+                transform-origin: left center;
+            }
+            100% {
+                -webkit-transform: translateX(0) rotateY(0deg);
+                transform: translateX(0) rotateY(0deg);
+                -webkit-transform-origin: left center;
+                transform-origin: left center;
+            }
+        }
+
+        .card-text{
+            font-size: 20px;
+        }
+
+        .card-title{
+            text-align: center;
+            font-weight: bold;
+            color: rgb(44, 2, 73);
+        }
+
+        img{
+            width: 112px; 
+            margin-bottom: 25px;
+        }
+
+        .project{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box-1, .box-2, .box-3, .box-4, .box-5{
+            display: flex;
+            align-items: center;
+            width: 45rem;
+            margin: 20px 0;
+        }
+
+        .project-details{
+            background-color: whitesmoke;
+            transition: 0.1s;
+            padding: 5px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+
+        .project-details:hover{
+            box-shadow: 10px 10px 20px #6c757d !important;
+        }
+
+        .project-details > h4{
+            text-align: center;
+        }
+
+        .project-details > h5{
+            text-align: justify;
+        }
+        
+        .project-details > h4 > a{
+            color: rgb(44, 2, 73);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .tech-list > li{
+            color: whitesmoke;
+            font-weight: 500;
+            margin: 5px;
+            border-radius: 50px;
+        }
+
+        .card-1 > .tech-list > li{
+            background-color: springgreen;    
+        }
+
+        .card-2 > .tech-list > li{
+            background-color: rgb(140, 154, 235);
+        }
+
+        .card-3 > .tech-list > li{
+            background-color: tomato;
+        }
+
+        .card-4 > .tech-list > li{
+            background-color: purple;
+        }
+
+        .card-5 > .tech-list > li{
+            background-color: crimson;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            padding-inline-start: 0;
+        }        
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-shape">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <ul class="navbarli">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li class="current"><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <div class="content-experience">
+        <div class="summary">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">PROJECTS</h3>
+                    <p class="card-text">I am more passionate and enthusiast about Web Development. It helps me bring my ideas to reality. I am more obsessed over Frontend Development and putting my whole in it. Here are my few piece of work you can see.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="box-1">
+                <a href="https://clone-28ae2.web.app/" style="text-decoration: none;">
+                    <div class="cards card-1 project-details" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="500">
+                        <h4> 🛒Amazon Clone App </h4>
+                        <hr>
+                        <br>
+                        <h5> <em>Amazon clone App</em> is a static version of Amazon site which has a clean UI effects and
+                        functionalities such as User Authentication, Add/Remove
+                        items to/from Cart with total items and price's subtotal.</h5> 
+                        <br>
+                        <ul class="tech-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JS</li>
+                            <li>React JS</li>
+                            <li>React-Context-API</li>
+                            <li>React-Router</li>
+                            <li>Material UI</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box-2">
+                <a href="https://netflix-clone-dc333.web.app/" style="text-decoration: none;">
+                    <div class="cards card-2 project-details" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800">
+                        <h4> 👓Netflix Clone App </h4>
+                        <hr>
+                        <br>
+                        <h5> <em>Netflix Clone App</em> is a clone of original Netflix site gives you list of movies and also
+                        shows the trailer from YouTube (if available) with clean and
+                        smooth UI effects same as that of original Netflix site.</h5> 
+                        <br>
+                            <ul class="tech-list">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JS</li>
+                                <li>React JS</li>
+                                <li>Axios</li>
+                                <li>TMDB API</li>
+                                <li>React-Youtube</li>
+                                <li>Movie-Trailer</li>
+                                <li>Firebase</li>
+                            </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box-3">
+                <a href="https://covid-19-tracker-11c02.web.app/" style="text-decoration: none;">
+                    <div class="cards card-3 project-details" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1100">
+                        <h4> 🦠COVID-19 Tracker </h4>
+                        <hr>
+                        <br>
+                        <h5> <em>COVID-19 Tracker App</em> which shows statistics of cases of every
+                            country plotted by circles on Map and on Graph along with list of
+                            countries and its corresponding total cases in decreasing order. </h5> 
+                            <br>
+                            <ul class="tech-list">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JS</li>
+                                <li>React JS</li>
+                                <li>Disease.sh</li>
+                                <li>Chart-JS-2</li>
+                                <li>React-Leaflet</li>
+                                <li>Firebase</li>
+                            </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box-4">
+                <a href="https://flask-my-blog-site.herokuapp.com/" style="text-decoration: none;">
+                    <div class="cards card-4 project-details" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1400">
+                        <h4> 📰TechKnow Sage </h4>
+                        <hr>
+                        <br>
+                        <h5> <em>TeckKnow Sage</em> is a Blog Website where you can share your knowledge by posting it. It has C R U D functionalities for
+                            BlogPost along-with User Authentication and few more
+                            functionalities. </h5> 
+                            <br>
+                            <ul class="tech-list">
+                                <li>Flask</li>
+                                <li>Python</li>
+                                <li>Flask-libraries</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Bootstrap</li>
+                                <li>PostgreSQL</li>
+                                <li>Heroku</li>
+                            </ul>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box-5">
+                <a href="https://github.com/Yola21/Home-Away-From-Home" style="text-decoration: none;">
+                    <div class="cards card-5 project-details" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1700">
+                        <h4> 🏠Home Away From Home </h4>
+                        <hr>
+                        <br>
+                        <h5> <em>Home Away From Home</em> is an Android App that help students to find better Flat's or Hostels or PG's nearby their location in a new city.</h5> 
+                            <br>
+                            <ul class="tech-list">
+                                <li>Android Studio</li>
+                                <li>Java</li>
+                                <li>Recycler View</li>
+                                <li>Card View</li>
+                                <li>Navigation Drawer</li>
+                                <li>Firebase</li>
+                            </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" style="margin: 5rem 42rem;"><a href="https://github.com/Yola21" style="text-decoration: none; color: white; ;"> View More</a></button>
+    
+    <p style="text-align: center; font-size: 25px;">Developed with ❤ and a Cup of 🍵 by <a href="https://github.com/Yola21" style="text-decoration: none; color: inherit;"><strong>Yola Yash!</strong></a></p>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
