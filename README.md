@@ -8,8 +8,7 @@
 
 <p align="center">
  <a href="#about">About</a> •
- <a href="#screenshots">Screenshots</a> • 
- <a href="#tech-stack">Tech Stack</a> 
+ <a href="#screenshots">Screenshots</a> 
 </p>
 
 
@@ -21,31 +20,31 @@
 ## Screenshots
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/image/home.png">
+  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/home.png">
 </p>
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/image/about.png">
+  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/about.png">
 </p>
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/image/skills.png">
+  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/skills.png">
 </p>
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/image/leadership.png">
+  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/leadership.png">
 </p>
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/image/experience.png">
+  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/experience.png">
 </p>
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/image/projects.png">
+  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/projects.png">
 </p>
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/image/contact.png">
+  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/contact.png">
 </p>
 ---
 
