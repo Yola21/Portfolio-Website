@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "My Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yola21/Portfolio-Website.git"
+  },
+  "author": "Yash Khorja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yola21/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/Yola21/Portfolio-Website#readme"
+}
