@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.summary{
+    margin: 5rem auto;
+    width: 50%;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(44, 2, 73);
+}       
+
+table{
+    width: 100%;
+}
+
+.heading-3{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 35px;
+    color: darkblue;
+    text-shadow: 3px 3px 6px #000;
+}
+
+tr{
+    line-height: 80px;
+}
+
+th, td{
+    font-size: 30px;
+    color: indigo;
+    text-align: center;
+}
+
+.skills{
+    margin-left: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.languages{
+    margin-bottom: 7rem;
+}
+
+.web{
+    margin-bottom: 7rem;
+}
+
+.other{
+    margin-bottom: 7rem;
+}
+
+img{
+    width: 80px;
+}

@@ -1,0 +1,150 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 2.3rem 0;
+}
+
+.contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 3rem; */
+}
+
+.contact-me-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-1 > button{
+    background-color: springgreen;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.contact-me-1 > button > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact-card{
+    width: 40vw;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: #ccdbfd;
+    color: #13215f;
+    border: 12px outset #4361ee;
+}
+
+.contact-card  a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.part{
+    margin: 3rem;
+}
+
+.contactinfo, .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactinfo{
+    transition: 0.5s;
+    z-index: 1;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    border: 20px groove #4361ee;
+}
+
+.icons{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+
+.avatar{
+    max-width: 35vw;
+    max-height: 35vh;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.contactinfo:hover .icons{
+    transition: 0.5s;
+}
+
+.contactinfo:hover .icons:nth-child(1){
+    transform: rotate(-90deg) translateY(-188px);
+}
+
+.contactinfo:hover .icons:nth-child(2){
+    transition-delay: 0.1s;
+    transform: rotate(-45deg) translateY(-188px);
+}
+
+.contactinfo:hover .icons:nth-child(3){
+    transition-delay: 0.2s;
+    transform: rotate(0deg) translateY(-188px);
+}
+
+.contactinfo:hover .icons:nth-child(4){
+    transition-delay: 0.3s;
+    transform: rotate(45deg) translateY(-188px);
+}
+
+.contactinfo:hover .icons:nth-child(5){
+    transition-delay: 0.4s;
+    transform: rotate(90deg) translateY(-188px);
+}
+
+.fab{
+    font-size: 2.5rem;
+    transition: 0.8s;
+}
+
+.icons:hover i{
+    transform: rotate(360deg);
+}
+
+.github{
+    border: 3px solid #000;
+}
+
+.linkedin{
+    border: 3px solid rgb(0, 162, 255);
+}
+
+.instagram{
+    border: 3px solid palevioletred;
+}
+
+.reddit{
+    border: 3px solid red;
+}
+
+.twitter{
+    border: 3px solid rgb(1, 199, 248);
+}
+
+.contact h2{
+    color: darkblue;
+    text-align: center;
+    text-shadow: 3px 3px 6px #000;
+    font-size: 50px;
+}

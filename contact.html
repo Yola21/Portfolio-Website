@@ -8,149 +8,11 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact.css">
     
     <link rel="icon" href="./image/icon.jpeg" type="image/icon">
     <title>Yash Khorja</title>
-
-    <style>
-        .contactinfo, .icons{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contactinfo{
-            transition: 0.5s;
-            z-index: 1;
-        }
-
-        .icons{
-            background-color: #fff;
-            border-radius: 50%;
-            width: 5rem;
-            height: 5rem;
-            position: absolute;
-            z-index: -1;
-            transform: translateY(0px);
-            transition: 0.5s;
-        }
-
-        .avatar{
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .contactinfo:hover{
-            transform: scale(1.1);
-        }
-
-        .contactinfo:hover .icons{
-            transition: 0.5s;
-        }
-
-        .contactinfo:hover .icons:nth-child(1){
-            transform: rotate(-60deg) translateY(-200px);
-        }
-
-        .contactinfo:hover .icons:nth-child(2){
-            transition-delay: 0.1s;
-            transform: rotate(-30deg) translateY(-200px);
-        }
-
-        .contactinfo:hover .icons:nth-child(3){
-            transition-delay: 0.2s;
-            transform: rotate(1deg) translateY(-200px);
-        }
-
-        .contactinfo:hover .icons:nth-child(4){
-            transition-delay: 0.3s;
-            transform: rotate(32deg) translateY(-200px);
-        }
-
-        .contactinfo:hover .icons:nth-child(5){
-            transition-delay: 0.4s;
-            transform: rotate(62deg) translateY(-200px);
-        }
-
-        .fab{
-            font-size: 3rem;
-            transition: 0.8s;
-        }
-
-        .icons:hover i{
-            transform: rotate(360deg);
-        }
-
-        .contactinfo:hover .icons{
-            z-index: 1;
-        }
-
-        .github{
-            border: 3px solid #000;
-        }
-
-        .linkedin{
-            border: 3px solid rgb(0, 162, 255);
-        }
-
-        .instagram{
-            border: 3px solid palevioletred;
-        }
-
-        .reddit{
-            border: 3px solid red;
-        }
-
-        .twitter{
-            border: 3px solid rgb(1, 199, 248);
-        }
-
-        .contact{
-            margin: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-    
-        .contact h2{
-            color: darkblue;
-            text-shadow: 3px 3px 6px #000;
-            font-size: 50px;
-        }
-
-        .contactme{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2.5rem;
-        }
-
-        .info{
-            flex: 50%;
-            margin: 30px;
-        }
-
-        .otherInfo{
-            border-radius: 50px;
-            text-align: center;
-            padding: 20px;
-            box-shadow: 20px 20px 60px #666e7f, -20px -20px 60px #fff;
-        }
-
-        .otherInfo p{
-            font-size: 30px;
-            color: rgb(21, 49, 90);
-        }
-
-        .otherInfo span{
-            font-size: 55px;
-        }
-
-        .otherInfo a{
-            text-decoration: none;
-        }
-    </style>
 
 </head>
 
@@ -175,9 +37,18 @@
     </header>
 
     <div class="contact">
-        <h2>Wanna Reach Out To Me..?</h2>
-        <div class="contactme">
-            <div class="contactinfo info">
+        <h2>Reach Out To Me</h2>
+        <div class="contact-me">
+            <div class="contact-me-1" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+                <div class="contact-card part">
+                    <p>If you want to discuss or share anything, always feel free to catch up with me at mentioned social media. I will try to get back to you ASAP😄.</p>
+                    <p>You can also email me or DM me 👇🏼</p>
+                    <span>📧: <a href="mailto:yashkhorja4@gmail.com">yashkhorja4@gmail.com</a> </span>
+                    <span>📱: <a href="tel:+91-9499805409">+91-9499805409</a> </span>
+                </div>    
+                <button><a href="https://bit.ly/3qGSXx1" target="_blank">Download Resume</a></button>
+            </div>
+            <div class="contactinfo info part" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
                 <div class="icons github">
                     <a href="https://github.com/Yola21" class="icon-link" style="color: black;">
                         <i class="fab fa-github-square"></i>   
@@ -203,12 +74,8 @@
                         <i class="fab fa-twitter-square"></i>
                     </a>
                 </div>
-                <img src="./image/mailbox.png" alt="" class="avatar">
-            </div>  
-            <div class="otherInfo info" data-aos="zoom-in-left" data-aos-delay="300" data-aos-duration="1000">
-                <p>You can also discuss any idea with me. Any suggestion/feedback will be appreciated. If you want to do a chit-chat, you can catch up with me via email or can DM me.</p>
-                <p> <a href="mailto:yashkhorja4@gmail.com"><span>📧</span></a>  <a href="tel:+91-9499805409"><span>📱</span></a> </p>
-            </div>  
+                <img src="./image/me1.jpg" alt="" class="avatar">
+            </div>    
         </div>
     </div>
     <p style="text-align: center; font-size: 25px;">Developed with ❤ and a Cup of 🍵 by <a href="https://github.com/Yola21" style="text-decoration: none; color: inherit;"><strong>Yola Yash!</strong></a></p>

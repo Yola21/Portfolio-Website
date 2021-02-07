@@ -1,0 +1,162 @@
+.aboutcontent{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    justify-content: center;
+}
+
+.box{
+    flex: 50%;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+img{
+    width: 50%;  
+    border-radius: 50%;
+}
+
+.child2{
+    margin-top: 10px;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+i{
+    font-size: 50px;
+}
+
+.child2 li{
+    margin: 2px;
+    transition: 0.3s;
+    padding: 8px;
+}
+
+.icons:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.text{
+    width: 25%;
+    margin: 3rem auto;
+    font-size: 50px;
+    color: darkblue;
+    text-shadow: 3px 3px 6px black;
+}
+
+.name{
+    font-size: 55px;
+    color: indigo;
+    font-weight: bold;
+}
+
+.subname{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    font-size: 70px;
+    color: indigo;
+    font-family: 'Monofett', cursive;
+}
+
+.subname > p{
+    margin: 0 2px;
+}
+
+.firstletter{
+    color: rgb(0, 41, 130);
+    animation: wave-1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes wave-1 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.secondletter{
+    color: rgb(153, 0, 255);
+    animation: wave-2 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave-2 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.thirdletter{
+    color: rgb(204, 83, 13);
+    animation: wave-3 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave-3 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.fourthletter{
+    color: rgb(148, 4, 16);
+    animation: wave-4 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave-4 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.para{
+    font-size: 35px;
+    color: #6096ba;
+    text-align: left;
+}
+
+@media (max-width: 1000px){
+    .aboutcontent{
+        flex-direction: column;
+    }
+    
+    .box{
+        margin: 10px;
+        text-align: center;
+    }
+}

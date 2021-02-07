@@ -1,0 +1,111 @@
+.content-section{
+    margin-top: 40px;
+}
+
+.education{
+    width: 70%; 
+    margin: auto;
+}
+
+.edu{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 110%;
+    margin: 3rem 0;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    color: darkblue;
+    text-shadow: 3px 3px 6px black;
+}
+
+h5, h6{
+    color: rgb(44, 2, 73);
+    font-weight: bold;
+}
+
+.eduinfo{
+    margin: 0px 25px;
+}
+
+.cards{
+    width: 172rem;
+    background-color: #ccdbfd;
+    color: rgb(21, 49, 90);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top: 8px solid darkblue;
+}
+
+.card-img{
+    width: 50rem;
+}
+
+.avatar{
+    margin: 30px 50px;
+}
+
+.avtimg{
+    width: 120px; 
+    height: 120px; 
+    margin: 10px 0px;
+}
+
+.avatar h5{
+    text-align: center;
+}
+
+.fit-box{
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: inset 10px 10px 20px #8f99b1, inset -10px -10px 20px #fff;
+}
+
+.fit-box > img{
+    border-radius: 15px;
+}
+
+span{
+    float: right;
+}
+
+@media (max-width: 1000px){
+    .edu{
+        flex-direction: column;
+    }
+    
+    .eduinfo{
+        margin: 20px 25px;
+    }
+
+    .card-img{
+        width: 17.5rem;
+    }
+
+    .card{
+        width: 34rem;
+    }
+}
+
+@media (max-width: 700px){
+    .card{
+        width: 21rem;
+    }
+
+    span{
+        float: none;
+    }
+}
+
+@media (max-width: 400px){
+    .card{
+        width: 15rem;
+    }
+
+    span{
+        float: none;
+    }
+}
