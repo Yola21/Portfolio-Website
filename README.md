@@ -32,14 +32,6 @@
 </p>
 
 <p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/leadership.png">
-</p>
-
-<p align="center">
-  <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/experience.png">
-</p>
-
-<p align="center">
   <img alt="cases" src="https://github.com/Yola21/yola21.github.io/blob/main/image/projects.png">
 </p>
 
