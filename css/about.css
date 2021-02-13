@@ -23,7 +23,7 @@ h2{
 }
 
 h5, h6{
-    color: rgb(44, 2, 73);
+    color: #1d2d44;
     font-weight: bold;
 }
 
@@ -34,7 +34,7 @@ h5, h6{
 .cards{
     width: 172rem;
     background-color: #ccdbfd;
-    color: rgb(21, 49, 90);
+    color: #000;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     border-top: 8px solid darkblue;
@@ -61,7 +61,7 @@ h5, h6{
 .fit-box{
     padding: 18px;
     border-radius: 15px;
-    box-shadow: inset 10px 10px 20px #8f99b1, inset -10px -10px 20px #fff;
+    box-shadow: inset 10px 10px 20px #253852, inset -10px -10px 20px #95e0ff;
 }
 
 .fit-box > img{

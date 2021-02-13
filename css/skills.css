@@ -14,7 +14,7 @@
 .card-title{
     text-align: center;
     font-weight: bold;
-    color: rgb(44, 2, 73);
+    color: #1d2d44;
 }       
 
 table{
@@ -35,7 +35,7 @@ tr{
 
 th, td{
     font-size: 30px;
-    color: indigo;
+    color: #1d2d44;
     text-align: center;
 }
 

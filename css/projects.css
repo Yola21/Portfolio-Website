@@ -64,12 +64,7 @@
 .card-title{
     text-align: center;
     font-weight: bold;
-    color: rgb(44, 2, 73);
-}
-
-img{
-    width: 112px; 
-    margin-bottom: 25px;
+    color: var(--svgbgcolor);
 }
 
 .project{
@@ -79,68 +74,112 @@ img{
     flex-wrap: wrap;
 }
 
-.box-1, .box-2, .box-3, .box-4, .box-5{
-    display: flex;
-    align-items: center;
-    width: 45rem;
-    margin: 20px 0;
-}
-
 .project-details{
-    background-color: whitesmoke;
-    transition: 0.1s;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    background-color: #fff;
     border-radius: 20px;
     transition: 0.5s;
+    width: 25rem;
+    height: 25rem;
+}
+
+.project-shape-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.project-shape-divider svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 300px;
+}
+
+.project-shape-divider .shape-fill {
+    fill: #fff;
+}
+
+.project-detailsInfo{
+    padding: 18px;
+    z-index: 5;
+    color: #1d2d44;
 }
 
 .project-details:hover{
-    box-shadow: 10px 10px 20px #6c757d !important;
+    box-shadow: 20px 20px 50px #1d2d44;
 }
 
-.project-details > h4{
+.project-details h4{
+    color: #000;
     text-align: center;
 }
 
-.project-details > h5{
+.project-details p{
     text-align: justify;
+    font-size: 20px;
+    margin-top: 6rem;
 }
 
-.project-details > h4 > a{
-    color: rgb(44, 2, 73);
+.project-details button{
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    padding: 5px 10px;
+}
+
+.project-details a{
+    color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
 
-.tech-list > li{
-    color: whitesmoke;
-    font-weight: 500;
-    margin: 5px;
-    border-radius: 50px;
+.project-1{
+    background-color: #fbc3bc;
 }
 
-.card-1 > .tech-list > li{
-    background-color: springgreen;    
+.project-1 button{
+    background-color: #ec6b5a;
 }
 
-.card-2 > .tech-list > li{
-    background-color: rgb(140, 154, 235);
+.project-2{
+    background-color: #e7c6ff;
 }
 
-.card-3 > .tech-list > li{
-    background-color: tomato;
+.project-2 button{
+    background-color: #995ac7;
 }
 
-.card-4 > .tech-list > li{
-    background-color: purple;
+.project-3{
+    background-color: #b8c0ff;
 }
 
-.card-5 > .tech-list > li{
-    background-color: crimson;
+.project-3 button{
+    background-color: #4a57ac;
 }
 
-.tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-inline-start: 0;
+.project-4{
+    background-color: #cfe1b9;
+}
+
+.project-4 button{
+    background-color: #7aa04f;
+}
+
+.project-5{
+    background-color: #ffe0e9;
+}
+
+.project-5 button{
+    background-color: #99485e;
 }
