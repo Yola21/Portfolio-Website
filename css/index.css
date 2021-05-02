@@ -58,12 +58,6 @@ li{
     font-weight: bold;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
-.navbarli{
-    /* font-family: 'Bangers', cursive; */
-}
-
 .navbarli > li{
     box-shadow: 3px 3px 10px #0c121b, -3px -3px 10px #2e486d;
     margin: 5px 15px;

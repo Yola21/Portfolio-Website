@@ -31,14 +31,48 @@ i{
 }
 
 .child2 li{
-    margin: 2px;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 5px;
     transition: 0.3s;
-    padding: 8px;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
-.icons:hover{
-    transform: scale(1.1);
-    opacity: 0.7;
+.icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    transform: translate(-12px, 3.5px);
+}
+
+#icon-1{
+    background-color: #000;
+}
+
+#icon-2{
+    background-color: rgb(0, 162, 255);
+}
+
+#icon-3{
+    background-color: palevioletred;
+}
+
+#icon-4{
+    background-color: red;
+}
+
+#icon-5{
+    background-color: rgb(1, 199, 248);
+}
+
+.fab{
+    font-size: 30px;
+    transform: translateY(2px);
 }
 
 .text{
@@ -53,6 +87,10 @@ i{
     font-size: 55px;
     color: indigo;
     font-weight: bold;
+}
+
+.submaintext h5{
+    color: darkblue;
 }
 
 .subname{
